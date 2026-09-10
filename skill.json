@@ -1,0 +1,48 @@
+{
+  "name": "genpark-browser-computer-use-element-anchor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Vision-based bounding box to resilient DOM selector semantic anchoring engine preventing click drift on autonomous web browsing agents.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "browser-automation",
+  "tags": [
+    "computer-use",
+    "genspark-claw",
+    "browser-agent",
+    "element-anchor",
+    "vision-grounding"
+  ],
+  "inputs": {
+    "target_intent": {
+      "type": "string",
+      "default": "Click the primary Checkout button"
+    },
+    "viewport_x": {
+      "type": "number",
+      "default": 740
+    },
+    "viewport_y": {
+      "type": "number",
+      "default": 512
+    }
+  },
+  "outputs": {
+    "anchor_id": {
+      "type": "string"
+    },
+    "resolved_css_selector": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "stability_index": {
+      "type": "string"
+    },
+    "telemetry_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
